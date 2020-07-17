@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="ninodezign.com, ninodezign@gmail.com">
+<meta name="copyright" content="ninodezign.com">
+<title>MAD training</title>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+<!--script type="text/javascript">
+function zbk(Idn2){ if(document.getElementById){ return document.getElementById(Idn2); }else if(document.all){ return document.all(Idn2); }else{ return false; } }
+        function zcheckimg(){ zbk("idshowpic").innerHTML="<img src=./showpic.php>"; }
+        </script-->
+        
+        <script>
+        $(document).on("change", "#agree-btn", function () {
+		
+		if ($(this).prop("checked")) {
+                    $("#NextPage").button("enable");
+		} else {
+                    $("#NextPage").button("disable");
+                    }
+                });
+        </script>
+                
+                
+                </head>
+                
+                <body data-target="#nino-navbar" data-spy="scroll">
+                
+                <div data-role="page" id="Page1">
+                <div data-role="fieldcontain">
+                
+                
+                <table  align=center width=75% bgcolor=mistyrose >
+                <tr><td  align=center>
+                
+                <h2 class="nino-sectionHeading">
+                <span class="nino-subHeading">會員條款</span>
+                </h2>
+                
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <ul type="circle">
+                <li>歡迎蒞臨MAD training!您個人的隱私權，本站絕對尊重並予以保護，適用於您在本站活動時，所涉及的個人資料蒐集、運用與保護，但不適用於與本站功能連結之網站。為了保障您的權益，在註冊前請先詳細閱讀本同意書之所有內容，當您註冊或是登入時，即視為您已閱讀本同意書，並同意遵守以下所有同意書之規範。
+                </li><li><p>使用本站所提供的各項線上服務，依辦理需求，請申請人提供正確、最新且完整之資料。除上述資料外，在本站瀏覽，本站不會蒐集任何有關個人的身分資料。若您提供任何錯誤或不實的資料，本站有權拒絕您以該帳號使用網站之服務。
+                </li><li><p>除非得到您的同意，本站絕不會任意出售、交換、或出租任何您的個人資料給其他團體、個人或私人企業。但有下列情形者，本站得利用您的個人資料：
+                <ul  type="disc">
+                <li><br>配合檢調或司法單位合法的調查。
+                </li><li><br>配合政府機關依法進行之調查或使用。
+                </li><li><br>基於法律規定。
+                </li></ul>
+                </li><li><p>維持密碼及帳號的機密安全，是本站與您共同的責任。您的密碼或帳號遭到盜用或有其他任何安全問題發生時，請您立即通知本站，以便資訊人員協助處理。
+                </li><li><p>您必須遵守相關法令規範，且您同意不從事刊載、傳輸、發送或儲存任何誹謗、詐欺、傷害、猥褻、色情、賭博、謾罵、不實或其他一切違反中華民國法令之檔案或資料。
+                </li><li><p>本同意書所定之任何會員條款之全部或一部無效時，不影響其他條款之效力。
+                </li><li><p>本同意書之解釋及適用以及會員因使用本服務而與本站間所生之權利義務關係，應依中華民國法令解釋適用之。其因此所生之爭議，以臺灣臺北方法院為第一審管轄法院。
+                </li></ul>
+                <br>
+                <br>
+                </td>
+                </tr>
+                <tr>
+                <td align=center>
+                </div>
+                </p>
+                
+                
+                <fieldset data-role="controlgroup" style="width:150px">
+                <input type="checkbox" name="checkbox-agree" id="agree-btn" class="custom" />
+                <label for="agree-btn" >我同意</label>
+                    </fieldset>
+                    <input type="button" id="NextPage" data-inline="true" onclick="javascript:location.href='./register'"  value="下一步" disabled/>
+		    </td>
+                    </tr>
+                    
+                    </table>
+                    </div>
+                    </div>
+                    
+                  
+                                <!-- javascript -->
+                                <!--script type="text/javascript" src="mogojs/jquery.min.js"></script>
+                                <script type="text/javascript" src="mogojs/isotope.pkgd.min.js"></script>
+                                <script type="text/javascript" src="mogojs/jquery.prettyPhoto.js"></script>
+                                <script type="text/javascript" src="mogojs/bootstrap.min.js"></script>
+                                <script type="text/javascript" src="mogojs/jquery.hoverdir.js"></script>
+                                <script type="text/javascript" src="mogojs/modernizr.custom.97074.js"></script>
+                                <script type="text/javascript" src="mogojs/jquery.mCustomScrollbar.concat.min.js"></script>
+                                <script type="text/javascript" src="mogojs/unslider-min.js"></script>
+                                <script type="text/javascript" src="mogojs/template.js"></script-->
+                                <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+                                <!--[if lt IE 9]>
+                                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                                <![endif]-->
+                                <!-- css3-mediaqueries.js for IE less than 9 -->
+                                <!--[if lt IE 9]>
+                                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+                                <![endif]-->
+                                
+                                </body>
+                                </html>
+

@@ -1,0 +1,59 @@
+
+.buttonarea{
+
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	height: 5vh;
+	margin-top: 3px;		
+	border: 1px solid #ffffff;
+
+}
+
+.editarea {
+
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	height: 10vh;
+	margin-top: 20px;		
+	border: 1px solid #ffffff;
+}
+
+.editarea .txtbox{
+
+	resize:none;
+	border: 1px solid #ffffff;
+	background:transparent;
+	outline:none;
+	text-align: center;
+}
+
+.editarea .txtbox:disabled {
+}
+
+.editbtn_on {
+	
+	/*border: 3px solid #111111;	
+	*/outline:#FA8000 dashed 5px;	
+}
+
+.editbtn_off {
+	outline: none;
+
+}
+#stuTab {
+
+	border: 3px solid #FF0000;
+	word-break:break-all; 
+	word-wrap:break-all;
+	width: 90vw;
+}
+
+#teaTab {
+
+	border: 3px solid #0000FF;
+	word-break:break-all; 
+	word-wrap:break-all;
+	width: 90vw;
+}

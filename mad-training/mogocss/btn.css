@@ -1,0 +1,209 @@
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 90px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 120px;
+  background: #5cb3ed;
+  padding: 30px 30px 40px 30px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #fab6b6;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sbtn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 5px;
+  background: #5cb3ed;
+  padding: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+
+.sbtn:hover {
+  background: #fab6b6;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.editbtn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 5px;
+  background: #5cb3ed;
+  padding: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+
+.editbtn:hover {
+  background: #fab6b6;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.editbtn:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+
+.donebtn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 5px;
+  background: #5cb3ed;
+  padding: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+.donebtn:hover {
+  background: #fab6b6;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.donebtn:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.deletebtn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 5px;
+  background: #5cb3ed;
+  padding: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+.deletebtn:hover {
+  background: #fab6b6;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.deletebtn:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.resetpwdbtn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 5px;
+  background: #5cb3ed;
+  padding: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+.resetpwdbtn:hover {
+  background: #fab6b6;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.detailbtn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 5px;
+  background: #5cb3ed;
+  padding: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+.detailbtn:hover {
+  background: #fab6b6;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.resetpwdbtn:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+
+#abtn {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 15px;
+  background: #9c9c9c;
+  padding: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+
+#abtn:hover {
+  background: #5c5c5c;
+  text-decoration: none;
+  color: #ffffff;
+}
+#scbtn {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 40px;
+  background: #1E90FF;
+  padding: 0px 10px 0px 10px;
+  text-decoration: none;
+}
+
+#scbtn:hover {
+  background: #6bc6ff;
+  text-decoration: none;
+ color:#fff;
+}
+
+/* =============== LAYOUT - HEADER AREA =============== */
+#nino-header {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	background:  rgba(240,128,128,0.9);
+}
+#nino-header:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(240,128,128,0.9); /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(rgba(240,128,128,0.9));
+	background: -o-linear-gradient(rgba(240,128,128,0.9));
+	background: linear-gradient(rgba(240,128,128,0.9)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#nino-headerInner {
+	position: relative;
+	z-index: 5;
+	/* =============== DEFAULT HTML - HEADING STYLES =============== */
+
+ .yu-icon {
+	font-size: 30px;
+	margin-right: 20px;
+	color: #5CB3ED;
+}
+
