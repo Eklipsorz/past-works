@@ -1,0 +1,30 @@
+\title{AlgorithmTemplate}
+\documentclass[10pt]{article}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+
+\begin{document}
+
+\begin{algorithm}[H]
+\floatname{algorithm}{ADT}
+\renewcommand{\thealgorithm}{}
+
+\caption{Heap: a collection containing n objects with their key value.}
+\label{protocol1}
+\begin{algorithmic}
+\STATE $Input :$\quad Heap h is an array of size n, $item \in Element\ and\ n\ \in \mathbb{N}.$
+\STATE 
+\STATE $Function :$ 
+
+\STATE \qquad\qquad $Boolean\ isEmpty(h)\ ::=$ true: empty / false: is not empty.
+\STATE \qquad\qquad $Boolean\ isFull(h)\ ::=$ true: full / false: is not full.
+\STATE \qquad\qquad $Element\ top(h)\ ::=$ return an root object.
+\STATE \qquad\qquad $void\ insert(h, item)\ ::=$ insert an item to the Heap $h$.
+\STATE \qquad\qquad $Element\ DeleteMin(h)\ ::=$ return an object with minimal value.
+
+\end{algorithmic}
+\end{algorithm} 
+
+\end{document}

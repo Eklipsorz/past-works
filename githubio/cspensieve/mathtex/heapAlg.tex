@@ -1,0 +1,166 @@
+\documentclass{article}
+\usepackage{amsmath}
+%\usepackage{algorithm}
+\usepackage[linesnumbered,ruled]{algorithm2e}
+
+
+%\usepackage{amssymb}
+%
+%\usepackage{algorithmic}
+
+
+
+
+
+
+
+\begin{document}
+\begin{algorithm}
+    
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+
+    \underline{function isEmpty} $(h)$\\
+    \Input{an array of size n+1}
+    \Output{true: empty/false: is not empty}
+    $n \leftarrow getHeapSize(h)$ \tcp{get current size of the heap $h$}
+    \eIf{$n>0$}
+      {
+        return $false$\\
+      }
+      {
+        return $true$\\
+      }
+    
+    \caption{check whether a heap is empty.}
+\end{algorithm}
+
+
+\begin{algorithm}
+    
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+
+    \underline{function isFull} $(h)$\\
+    \Input{an array of size n+1}
+    \Output{true: full/false: is not full}
+    $n \leftarrow getHeapSize(h)$ \tcp{get current size of the heap $h$}
+    $MaxSize \leftarrow getHeapMaxSize(h)$ \tcp{get max size of the heap $h$}
+    \eIf{$n\ is\ equal\ to\ MaxSize$}
+      {
+        return $true$\\
+      }
+      {
+        return $false$\\
+      }
+    
+    \caption{check whether a heap is full.}
+\end{algorithm}
+
+
+
+
+
+
+\begin{algorithm}
+    
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+
+    \underline{function top} $(h)$\\
+    \Input{an array of size n+1}
+    \Output{an object from the heap}
+        return $h[1]$\\
+    \caption{return a root object.}
+\end{algorithm}
+
+
+
+\begin{algorithm}
+    
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+
+    \underline{function Insert} $(h, item)$\\
+    \Input{an array of size n+1, an element}
+    \Output{true: successfully insert/false: failed to insert}
+        \If{$isFull(h)$ is true}
+        {
+            return false\\
+        }
+       	\tcp{get current size of the heap $h$ and the size plus 1}
+        $n \leftarrow getHeapSize(h) + 1$\\ 
+        $h[n] \leftarrow item$\\
+        shiftUp($h$, $n$)\\
+        return true\\
+    \caption{insert an object to the heap}
+    
+    \BlankLine
+    \BlankLine
+    
+    \underline{function shiftUp} $(h, n)$\\
+    \Input{an array of size n+1, n}
+    \Output{nothing}
+    $NewElement \leftarrow h[n]$\\
+    $h[0] \leftarrow -\infty$\\
+    \While{$NewElement < h[\frac{n}{2}]$}{
+        $h[n] \leftarrow h[\frac{n}{2}]$\\
+        $n \leftarrow \frac{n}{2}$
+    }
+    $h[n] \leftarrow NewElement$
+    
+\end{algorithm}
+
+
+\begin{algorithm}
+    
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+
+    \underline{function DeleteMin} $(h)$\\
+    \Input{an array of size n+1}
+    \Output{an object}
+        
+        \If{$isEmpty(h)$ is true}
+        {
+            return a NULL object\\
+        }
+    
+        $n \leftarrow getHeapSize(h)$ \tcp{get current size of the heap $h$}
+        $MinObject \leftarrow top(h)$\\
+        shiftDown($h$, $n$)\\
+        return $MinObject$\\
+    \caption{return an object with minimal value}
+    
+    \BlankLine
+    \BlankLine
+    
+    \underline{function shiftDown} $(h, n)$\\
+    \Input{an array of size n+1, n}
+    \Output{nothing}
+    $LastElement \leftarrow h[n]$\\
+    $n \leftarrow n - 1$ \\
+    $i \leftarrow 1$\\
+    
+    \While{$i*2 \leq n$}{
+        $child \leftarrow i*2$\\
+        \If{$child \neq n\ And\ h[child] > h[child+1]$}
+        {
+            $child \leftarrow child + 1$\\
+        }
+        
+        \eIf{$h[child] > LastElement$}
+        {
+            break\\
+        }
+        {
+            $h[i] \leftarrow h[child]$\\
+        }
+        
+        $i \leftarrow child$\\
+    
+    }
+    $h[i] \leftarrow LastElement$\\
+\end{algorithm}
+
+\end{document} 

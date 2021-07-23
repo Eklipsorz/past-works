@@ -1,0 +1,327 @@
+# For a description of these parameters, please visit the theme wiki.
+# https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
+baseurl                 = "https://Eklipsorz.github.io/"
+enableRobotsTXT 	= true
+canonifyURLs 		= true
+disqusShortname 	= "https-eklipsorz-github-io"
+DefaultContentLanguage  = "zh-tw"
+title                   = "CS Pensieve"
+theme                   = "hugo-future-imperfect-slim"
+paginate                = 3
+googleAnalytics         = ""
+pluralizeListTitles     = false
+disableLanguages        = [""]
+#disqusShortname 	= ""
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0.5
+[outputs]
+  home                  = ["html", "json"]
+[params]
+  enableCDN             = false
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  highlightjs           = true
+  highlightjsTheme      = "github"
+  highlightjsLang       = ["html", "css", "js", "toml"]
+  viewMorePostsLink     = "/blog/"
+  readingTime           = true
+  socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
+
+  [params.meta]
+    description         = "A pensieve which stores some knowledge about computer science"
+    author              = "Eklipsorz"
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
+
+  [params.header]
+    navbarTitle         = "CS Pensieve"
+    dynamicTitles       = true
+    searchMenu          = true
+    shareMenu           = true
+    languageMenu        = true
+
+  [params.intro]
+    header                = "Eklipsorz"
+    paragraph             = "一名不具名的平凡人，認為沒有任何事物是在客觀上是具有意義的，有的只是無止盡的主觀，因此在這裡只會有引人思考、想像的文章或者議題，甚至我的大頭貼也是如此XD"
+    rssIntro              = true
+    socialIntro           = true
+    hideWhenSingleColumn  = false
+    alwaysOnHomepage      = false
+
+    [params.intro.pic]
+      src                 = "img/main/logo.png"
+      shape               = "circle"
+      width               = ""
+      alt                 = "Hugo Future Imperfect Slim"
+
+  [params.sidebar]
+    about               = "一個儲存電腦科學知識的儲思盆，希望能記錄所有其他知識。"
+    postAmount          = 5
+    categories          = true
+    categoriesByCount   = true
+
+  [params.footer]
+    rssFooter           = true
+    socialFooter        = true
+
+  [params.staticman]
+    enabled             = true
+    api                 = ""  # No Trailing Slash
+    gitProvider         = ""
+    username            = ""
+    repo                = ""
+    branch              = ""
+
+    [params.staticman.recaptcha]
+      siteKey           = ""
+      encryptedKey      = ""
+
+[menu]
+
+  [[menu.main]]
+    name              = "Home"
+    identifier        = "home"
+    url               = "/"
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 1
+
+  [[menu.main]]
+    name              = "About"
+    identifier        = "about"
+    url               = "/about/"
+    pre               = "<i class='far fa-id-card'></i>"
+    weight            = 2
+
+  [[menu.main]]
+    name              = "Blog"
+    identifier        = "blog"
+    url               = "/blog/"
+    pre               = "<i class='far fa-newspaper'></i>"
+    weight            = 3
+
+  [[menu.main]]
+    name              = "Categories"
+    identifier        = "categories"
+    url               = "/categories/"
+    pre               = "<i class='fas fa-sitemap'></i>"
+    weight            = 5
+
+  [[menu.main]]
+    name              = "Contact"
+    identifier        = "contact"
+    url               = "/contact/"
+    pre               = "<i class='far fa-envelope'></i>"
+    weight            = 6
+
+[Languages]
+
+  [Languages.en]
+    LanguageCode        = "en"
+    LanguageName        = "English"
+    weight              = 1
+
+  [Languages.fr]
+    LanguageCode        = "fr"
+    LanguageName        = "Français"
+    title               = "Hugo Future Imperfect Slim en français"
+    description         = "Un thème par HTML5 UP, porté par Julio Pescador. Simplifié et amélioré par Patrick Collins. Multilingue par StatnMap. Propulsé par Hugo."
+    weight              = 2
+
+    [[Languages.fr.menu.main]]
+      name              = "Accueil"
+      identifier        = "home"
+      url               = "/"
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.fr.menu.main]]
+      name              = "About"
+      identifier        = "about"
+      url               = "/about/"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 2
+
+    [[Languages.fr.menu.main]]
+      name              = "Blog"
+      identifier        = "blog"
+      url               = "/blog/"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 3
+
+    [[Languages.fr.menu.main]]
+      name              = "Catégories"
+      identifier        = "categories"
+      url               = "/categories/"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 5
+
+    [[Languages.fr.menu.main]]
+      name              = "Contact"
+      identifier        = "contact"
+      url               = "/contact/"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 6
+
+  [Languages.pl]
+    LanguageCode        = "pl"
+    LanguageName        = "Polski"
+    title               = "Hugo Future Imperfect Slim po polsku"
+    description         = "Motyw HTML5 UP, przeniesiony przez Julio Pescadora i wzbogacony przez Patricka Collinsa. Wielojęzyczny przez StatnMap. Zasilany przez Hugo."
+    weight              = 2
+
+    [[Languages.pl.menu.main]]
+      name              = "Home"
+      identifier        = "home"
+      url               = "/"
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.pl.menu.main]]
+      name              = "O mnie"
+      identifier        = "about"
+      url               = "/about/"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 2
+
+    [[Languages.pl.menu.main]]
+      name              = "Blog"
+      identifier        = "blog"
+      url               = "/blog/"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 3
+
+    [[Languages.pl.menu.main]]
+      name              = "Kategorie"
+      identifier        = "categories"
+      url               = "/categories/"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 5
+
+    [[Languages.pl.menu.main]]
+      name              = "Kontakt"
+      identifier        = "contact"
+      url               = "/contact/"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 6
+
+  [Languages.pt]
+    LanguageCode        = "pt"
+    LanguageName        = "Português"
+    title               = "Hugo Future Imperfect Slim em português"
+    description         = "Um tema do HTML5 UP, portado por Julio Pescadora e reduzido por Patrick Collins. Multilíngue por StatnMap. Feito com Hugo."
+    weight              = 4
+
+    [[Languages.pt.menu.main]]
+      name              = "Início"
+      identifier        = "home"
+      url               = "/"
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.pt.menu.main]]
+      name              = "Sobre"
+      identifier        = "about"
+      url               = "/about/"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 2
+
+    [[Languages.pt.menu.main]]
+      name              = "Blog"
+      identifier        = "blog"
+      url               = "/blog/"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 3
+
+    [[Languages.pt.menu.main]]
+      name              = "Categorias"
+      identifier        = "categories"
+      url               = "/categories/"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 5
+
+    [[Languages.pt.menu.main]]
+      name              = "Contato"
+      identifier        = "contact"
+      url               = "/contact/"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 6
+
+  [Languages.de]
+    LanguageCode        = "de"
+    LanguageName        = "Deutsche"
+    weight              = 5
+
+  [Languages.es]
+    LanguageCode        = "es"
+    LanguageName        = "Española"
+    weight              = 6
+
+  [Languages.zh-CN]
+    LanguageCode        = "zh-CN"
+    LanguageName        = "中文"
+    weight              = 7
+
+  [Languages.zh-TW]
+    LanguageCode        = "zh-TW"
+    LanguageName        = "中文"
+    weight              = 8
+
+  [Languages.ja]
+    LanguageCode        = "ja"
+    LanguageName        = "日本語"
+    weight              = 9
+
+[social]
+  # Coding Communities
+  github                = "Eklipsorz"
+  gitlab                = ""
+  stackoverflow         = "" # User Number
+  bitbucket             = ""
+  jsfiddle              = ""
+  codepen               = ""
+  # Visual Art Communities
+  deviantart            = ""
+  flickr                = ""
+  behance               = ""
+  dribbble              = ""
+  # Publishing Communities
+  wordpress             = ""
+  medium                = ""
+  # Professional/Business Oriented Communities
+  linkedin              = ""
+  linkedin_company      = ""
+  foursquare            = ""
+  xing                  = ""
+  slideshare            = ""
+  # Social Networks
+  facebook              = ""
+  googleplus            = ""
+  reddit                = ""
+  quora                 = ""
+  youtube               = ""
+  vimeo                 = ""
+  whatsapp              = "" # WhatsApp Number
+    # WeChat and QQ need testing.
+    wechat              = ""
+    qq                  = "" # User ID Number
+  instagram             = ""
+  tumblr                = ""
+  twitter               = ""
+  strava                = ""
+  skype                 = ""
+  snapchat              = ""
+  pinterest             = ""
+  telegram              = "Eklipsorz"
+  vine                  = ""
+  googlescholar         = ""
+  orcid                 = ""
+  researchgate          = ""
+  keybase               = ""
+  mastodon              = ""
+  # Email
+  email                 = "eklipsorz@protonmail.ch"
